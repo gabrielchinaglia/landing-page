@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    font-family: 'Sora', sans-serif;
+}
+
+body {
+    background-color: #2f2f2f;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: #1f1f1f;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-family: 'Sora', sans-serif;
+    color: #fff;
+    font-weight: 300;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.brand {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu a {
+    color: #fff;
+    padding: 10px;
+}
+.menu a:hover {
+    color: #f5da28;
+}
+
+.material-symbols-outlined {
+    color: #e5c605;
+    font-size: 40px;
+}
+
+#principal {
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(#000000b0, #000000b0), url("/assets/images/Zentorno-1.jpg");
+    background-size: cover;
+    background-color: #0000003b;
+    display: flex;
+    justify-content: center;
+}
+#principal:hover {
+
+}
+
+#principal .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.car-name {
+    color: #fff;
+    font-size: 60px;
+    margin-top: 250px;
+    font-weight: bold;
+    width: 800px;
+}
+
+.car-header {
+    font-size: 20px;
+}
+
+.car-info {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.numbers {
+    flex: 1;
+    height: 80px;
+    color: #fff;
+    padding: 30px;
+    font-size: 15px;
+}
+
+.number-value {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+}
