@@ -165,3 +165,28 @@ header a {
     font-size: 13px;
     line-height: 22px;
 }
+
+#options {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.option {
+    justify-content: space-around;
+}
+
+.option-box {
+    flex: 1;
+    text-align: center;
+}
+.option-box:hover {
+    padding-bottom: 15px;
+    background-color: #fafafa;
+}
+
+.option-box img {
+    width: 100px;
+    padding: 10px;
+}
