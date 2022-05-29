@@ -81,9 +81,6 @@ header a {
     display: flex;
     justify-content: center;
 }
-/* #principal:hover {
-
-} */
 
 #principal .container {
     display: flex;
@@ -204,6 +201,41 @@ header a {
     width: 110px;
     padding-top: 0;
     padding-bottom: 12px;
+}
+
+#specifications {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+.specification {
+    width: 700px;
+    flex-direction: column;
+    align-items: normal;
+}
+
+.spec-title {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.spec-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #aaa;
+}
+
+#car-pictures {
+    height: 250px;
+    background-color: #f5da28;
 }
 
 footer {
