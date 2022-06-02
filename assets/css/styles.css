@@ -356,6 +356,13 @@ address {
 
 @media (max-width: 768px) {
 
+    .container nav {
+        display: none;
+    }
+    .container {
+       width: calc(100% - 40px);
+    }
+
     .logo {
         font-size: 25px;
         align-items: center;
@@ -374,7 +381,7 @@ address {
     }
 
     .car-name {
-        margin-top: 100px;
+        margin-top: 80px;
         font-size: 50px;
     }
 
@@ -389,6 +396,7 @@ address {
 
     .numbers {
         flex: none;
+        padding: 0 30px 0 0;
     }
 
     .section-text {
@@ -404,6 +412,14 @@ address {
         flex-direction: column-reverse;
     }
 
+    .option {
+        width: calc(100% - 40px);
+    }
+
+    .option-box {
+        font-size: 14px;
+    }
+
     .specification {
         width: calc(100% - 80px);
     }
@@ -416,5 +432,80 @@ address {
     #car-pictures div {
         flex: auto;
         width: 50%;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .container nav {
+        display: none;
+    }
+
+    .container {
+        padding: 0 15px;
+        width: calc(100% - 30px);
+    }
+
+    #principal {
+        height: 400px;
+    }
+
+    .car-name {
+        width: calc(100% - 20px);
+        padding: 0 10px;
+        margin-top: 50px;
+        font-size: 32px;
+    }
+
+    .car-header {
+        margin-bottom: 20px;
+    }
+
+    .car-text h2,
+    .car-text p {
+        padding: 0 15px;
+    }
+
+    .numbers {
+        flex: 1;
+        padding: 0 7px;
+        font-size: 11px;
+    }
+
+    .number-value {
+        font-size: 20px;
+    }
+
+    #options {
+        height: 450px;
+        padding-bottom: 30px;
+    }
+
+    .option {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .spec-title {
+        height: auto;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .spec-text {
+        font-size: 13px;
+    }
+
+    .description {
+        flex: 1;
+    }
+
+    .data {
+        flex: 2;
+    }
+
+    #car-pictures {
+        height: 250px;
+        flex-wrap: wrap;
     }
 }
