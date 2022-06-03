@@ -13,6 +13,7 @@ header {
     width: 100%;
     height: 100px;
     background-color: #1f1f1f;
+    border-bottom: 1px solid #2f2f2f;
 }
 
 header a {
@@ -33,6 +34,7 @@ header a {
     font-family: 'Sora', sans-serif;
     color: #fff;
     font-weight: 300;
+    align-items: center;
 }
 
 .logo img {
@@ -42,6 +44,13 @@ header a {
 .brand {
     margin-left: 10px;
     text-decoration: none;
+}
+
+.menu-mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 30px 20px 30px 0;
 }
 
 .menu ul{
@@ -316,13 +325,13 @@ address {
     .container {
         padding-left: 20px;
         padding-right: 20px;
-        width: calc(100% - 130px);
+        width: calc(100% - 40px);
     }
 
     .car-name {
         padding-left: 20px;
         padding-right: 20px;
-        width: calc(100% - 40px);
+        width: calc(100% - 120px);
     }
 
     .car-info {
@@ -356,11 +365,19 @@ address {
 
 @media (max-width: 768px) {
 
-    .container nav {
-        display: none;
+    header nav {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
     .container {
        width: calc(100% - 40px);
+    }
+
+    .pegassi {
+        padding-left: 20px;
     }
 
     .logo {
@@ -368,12 +385,41 @@ address {
         align-items: center;
     }
 
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .mm-line {
+        height: 3px;
+        background-color: #ffffff;
+    }
+
     .menu a {
+        flex: 1;
+        text-align: center;
         padding: 5px;
     }
 
     .menu ul {
-        font-size: 16px;
+        display: none;
+        font-size: 18px;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #1f1f1f;
+    }
+    
+    .menu ul li {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        border-bottom: 1px solid #2f2f2f;
     }
     
     #principal {
@@ -436,10 +482,6 @@ address {
 }
 
 @media (max-width: 425px) {
-
-    .container nav {
-        display: none;
-    }
 
     .container {
         padding: 0 15px;
